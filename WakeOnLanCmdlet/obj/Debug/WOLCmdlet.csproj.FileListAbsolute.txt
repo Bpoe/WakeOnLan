@@ -1,5 +1,0 @@
-c:\users\bpoe\documents\visual studio 2013\Projects\WOLCmdlet\WOLCmdlet\bin\Debug\WOLCmdlet.dll
-c:\users\bpoe\documents\visual studio 2013\Projects\WOLCmdlet\WOLCmdlet\bin\Debug\WOLCmdlet.pdb
-c:\users\bpoe\documents\visual studio 2013\Projects\WOLCmdlet\WOLCmdlet\obj\Debug\WOLCmdlet.csprojResolveAssemblyReference.cache
-c:\users\bpoe\documents\visual studio 2013\Projects\WOLCmdlet\WOLCmdlet\obj\Debug\WOLCmdlet.dll
-c:\users\bpoe\documents\visual studio 2013\Projects\WOLCmdlet\WOLCmdlet\obj\Debug\WOLCmdlet.pdb
