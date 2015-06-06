@@ -1,0 +1,5 @@
+c:\users\bpoe\documents\visual studio 2013\Projects\WOLCmdlet\WOLCmdlet\bin\Debug\WakeOnLanCmdlet.dll
+c:\users\bpoe\documents\visual studio 2013\Projects\WOLCmdlet\WOLCmdlet\bin\Debug\WakeOnLanCmdlet.pdb
+c:\users\bpoe\documents\visual studio 2013\Projects\WOLCmdlet\WOLCmdlet\obj\Debug\WakeOnLanCmdlet.csprojResolveAssemblyReference.cache
+c:\users\bpoe\documents\visual studio 2013\Projects\WOLCmdlet\WOLCmdlet\obj\Debug\WakeOnLanCmdlet.dll
+c:\users\bpoe\documents\visual studio 2013\Projects\WOLCmdlet\WOLCmdlet\obj\Debug\WakeOnLanCmdlet.pdb
