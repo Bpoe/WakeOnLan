@@ -45,9 +45,12 @@ namespace Poesoft
         /// <param name="data">The data to send in the UDP packet</param>
         private static void SendUdpPacket(IPAddress address, int port, byte[] data)
         {
-            var udp = new UdpClient();
-            udp.Connect(address, port);
-            udp.Send(data, data.Length);
+            using (var udp = new UdpClient())
+            {
+                udp.Connect(address, port);
+                udp.Send(data, data.Length);
+                udp.Close();
+            }
         }
 
         /// <summary>
@@ -59,21 +62,17 @@ namespace Poesoft
         {
             // From http://en.wikipedia.org/wiki/Wake-on-LAN
             // The magic packet is a broadcast frame containing anywhere within its payload 6 bytes of all
-            // 255 (FF FF FF FF FF FF in hexadecimal), followed by sixteen repetitions of the target computer's
-            // 48-bit MAC address, for a total of 102 bytes.
+            // 255, followed by sixteen repetitions of the target computer's 48-bit MAC address, for a 
+            // total of 102 bytes.
             var packet = new byte[102];
+            packet.SetValues((byte)255, 0, 6);
 
-            var packetIndex = 0;
-
-            for (; packetIndex < 6; packetIndex++)
+            var index = 6;
+            const int repetitions = 16;
+            for (var r = 0; r < repetitions; r++)
             {
-                packet[packetIndex] = 0xff;
-            }
-
-            for (var r = 0; r < 16; r++)
-            {
-                macAddress.CopyTo(packet, packetIndex);
-                packetIndex += macAddress.Length;
+                macAddress.CopyTo(packet, index);
+                index += macAddress.Length;
             }
 
             return packet;

@@ -4,11 +4,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using System.Management.Automation;
-using System.Net;
-
 namespace Poesoft
 {
+    using System.Management.Automation;
+    using System.Net;
+
     /// <summary>
     /// Implements the Wake-Computer PowerShell Cmdlet
     /// </summary>

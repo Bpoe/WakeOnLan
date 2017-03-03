@@ -4,11 +4,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using System;
-using System.Text.RegularExpressions;
-
 namespace Poesoft
 {
+    using System;
+    using System.Text.RegularExpressions;
+
     /// <summary>
     /// Provides a MAC address
     /// </summary>

@@ -4,10 +4,10 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using System;
-
 namespace Poesoft
 {
+    using System;
+
     /// <summary>
     /// Ensures certain conditions are met.
     /// </summary>
